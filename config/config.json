@@ -1,22 +1,21 @@
 {
   "development": {
-    "username": "apiBackend",
+    "username": "api_backend_developpement",
     "password": "BycC8E3Xc7665iJSS45Y6d5TxR7Udmaeq8",
-    "database": "database_development",
-    "host": "127.0.0.1",
+    "database": "api_backend_developpement",
     "dialect": "mysql"
   },
   "test": {
-    "username": "apiBackend",
+    "username": "api_backend_test",
     "password": "BycC8E3Xc7665iJSS45Y6d5TxR7Udmaeq8",
-    "database": "database_test",
+    "database": "api_backend_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
-    "username": "apiBackend",
+    "username": "api_backend_production",
     "password": "BycC8E3Xc7665iJSS45Y6d5TxR7Udmaeq8",
-    "database": "database_production",
+    "database": "api_backend_production",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
