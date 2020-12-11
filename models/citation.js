@@ -18,8 +18,7 @@ module.exports = (sequelize, DataTypes) => {
       models.Citation.belongsToMany(models.Categorie, {
         through : 'Categorie_citations',
         as : 'Categories',
-        foreignKey : 'idCITATIONS',
-        otherKey : 'idCATEGORIES'
+        foreignKey : 'idCITATIONS'
       })
     }
   };

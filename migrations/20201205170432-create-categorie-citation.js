@@ -2,6 +2,12 @@
 module.exports = {
     up: async (queryInterface, Sequelize) => {
         await queryInterface.createTable('Categorie_citations', {
+            id: {
+                allowNull: false,
+                autoIncrement: true,
+                primaryKey: true,
+                type: Sequelize.INTEGER
+            },
             idCATEGORIES: {
                 allowNull: true,
                 type: Sequelize.INTEGER,

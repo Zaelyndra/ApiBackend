@@ -9,24 +9,32 @@ module.exports = {
                 type: Sequelize.INTEGER
             },
             nom: {
-                allowNull: false,
-                type: Sequelize.STRING
+                type: Sequelize.STRING,
+                allowNull: true
             },
             prenom: {
-                allowNull: false,
-                type: Sequelize.STRING
+                type: Sequelize.STRING,
+                allowNull: false
             },
             mail: {
-                allowNull: false,
-                type: Sequelize.STRING
+                type: Sequelize.STRING,
+                allowNull: false
             },
             identifiant: {
-                allowNull: false,
-                type: Sequelize.STRING
+                type: Sequelize.STRING,
+                allowNull: false
+
             },
             password: {
-                allowNull: false,
-                type: Sequelize.STRING
+                type: Sequelize.STRING,
+                allowNull: false
+            },
+            idROLES: {
+                type: Sequelize.INTEGER,
+                references: {
+                    model: 'Roles',
+                    key: 'id'
+                }
             },
             createdAt: {
                 allowNull: false,
